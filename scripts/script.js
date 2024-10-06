@@ -29,6 +29,9 @@ async function getData() {
 }
 
 function displayPosts(posts) {
+
+    if (maxPosts >= absoluteMax) return
+
     const container = document.getElementById("post-container"); // gets id from only element in body
     let row;
 
@@ -47,18 +50,17 @@ function displayPosts(posts) {
 
         if ((index + 1) % postsPerPage === 0) {
             container.appendChild(row);
-            }
-        
+        }
     });
 }
 
 document.addEventListener("scroll",()=> {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight;
-    const clientHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowHeight = window.innerHeight || document.documentElement.windowHeight;
 
-    if (scrollTop + clientHeight >= scrollHeight - 10 && !isLoading && maxPosts <= absoluteMax) {
-        maxPosts += 3;
+    if (scrollTop + windowHeight >= scrollHeight - 10 && !isLoading && maxPosts <= absoluteMax) {
+        maxPosts += 6;
         getData();
         page++
     }

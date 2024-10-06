@@ -229,6 +229,21 @@ p.author {
 }
 
 
+#weather-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+#displayWeather {
+    justify-content: center;
+    text-align: center;
+}
+
+
 
 footer {
     background-color: #00032f;

@@ -17,6 +17,27 @@
             <li><a href="third.html">Open-Meteo</a></li>
         </ul>
     </header>
+
+    <div id="weather-container">
+        <h3>Select a city:</h3>
+        <label for="city">Choose city:</label>
+        <select id="city">
+            <option value="" disabled selected>Select a city</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Oslo">Oslo</option>
+            <option value="Madrid">Madrid</option>    
+            <option value="Paris">Paris</option>
+            <option value="Helsinki">Helsinki</option>
+        </select>
+
+        <div id="displayWeather"></div>
+
+    </div>
+
+
     <footer>Copyright@</footer>
+
+    <script src="scripts/open-meteo.js"></script>
+
 </body>
 </html>
