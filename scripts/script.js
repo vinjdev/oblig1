@@ -38,7 +38,7 @@ function displayPosts(posts) {
     posts.forEach((post, index) => {
         if ((index) % postsPerPage === 0) {
             row = document.createElement("div"); // create a new row, if row is done
-            row.classList.add("row");            // make 3 "rows" see css
+            row.classList.add("row");            // make 3 "rows", see css
         }
 
         const col = document.createElement("div"); 
