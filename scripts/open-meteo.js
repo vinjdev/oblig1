@@ -3,8 +3,8 @@ const locations = [
     {name: "Oslo",     latitude: 59.9114, longitude:  10.7579},
     {name: "Madrid",   latitude: 40.4167, longitude:  -3.7037},
     {name: "Paris",    latitude: 48.8647, longitude:   2.3490},
-    {name: "Helsinki", latitude: 60.1920, longitude:  24.9458}
-    {name: "Lillehammer", latitude: 61.1151, longitude:  10.4662}
+    {name: "Helsinki", latitude: 60.1920, longitude:  24.9458},
+    {name: "Lillehammer", latitude: 61.1151, longitude:  10.4662},
     {name: "Gjovik", latitude: 60.79574, longitude:  10.6915}
     
 ]
